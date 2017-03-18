@@ -1,5 +1,5 @@
-import React from 'react';
 import importcss from 'importcss';
+import React from 'react';
 import { Grid, Row, Col, Nav, NavItem } from 'react-bootstrap';
 import { Card, CardBlock, CardTitle } from 'reactstrap';
 import Component from 'lsk-general/General/Component';
@@ -13,6 +13,7 @@ export default class HomePage extends Component {
       <div>
         <Header siteTitle={this.props.siteTitle} />
         <Grid styleName="content">
+          <h1>Безруков Михаил Владимирович</h1>
           <Row>
             <Col xs={12} md={4}>
               <Card>
