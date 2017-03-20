@@ -8,6 +8,7 @@
     "npm": ">=3.3 <4"
   },
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "bootstrap": "^3.3.7",
     "bootstrap-3-card": "^0.2.0",
     "bootstrap-sass": "^3.3.7",
@@ -70,6 +71,7 @@
     "postcss-loader": "1.2.2",
     "react-hot-loader": "3.0.0-beta.6",
     "sass-loader": "^4.1.1",
+    "storybox": "^0.3.0",
     "webpack": "1.13.2",
     "webpack-hot-middleware": "2.15.0",
     "webpack-middleware": "1.5.1"
@@ -84,6 +86,8 @@
     "render": "babel-node tools/run render",
     "start": "node build/server.js",
     "dev": "babel-node tools/run start | node node_modules/lego-starter-kit/src/utils/bunyan -o short -l trace",
-    "storybook": "start-storybook -p 9001"
+    "storybook": "start-storybook -p 9001",
+    "storybox": "start-storybook -p 9001 -c .storybook",
+    "build-storybox": "build-storybook -c .storybook -o .out"
   }
 }

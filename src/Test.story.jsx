@@ -3,7 +3,7 @@ module.exports = ({ storiesOf, action }) => {
   return storiesOf('General/Test', module)
     .add('default', () => {
       return <div>
-        The test
+        The test!!!
       </div>
     })
 }
